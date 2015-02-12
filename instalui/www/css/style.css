@@ -1,0 +1,45 @@
+/* Empty. Add your own CSS if you like */
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+	#contenido{
+		background-color: orange;
+		height: 100%;
+		background-image: url('../img/fondo.jpg');
+		
+		}
+	#centro{
+		margin: 0 auto;
+	}
+	
+   .titulo{   
+		padding-top: 75%;
+		font-weight: bold;
+		text-align: center;
+		font-family: 'Fredoka One', cursive;
+		font-weight: 800;
+	}
+
+	#home{
+		position: absolute;
+			right: 3em;
+			top: -3px;
+		}
+
+#barra{
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+

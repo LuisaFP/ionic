@@ -1,0 +1,10 @@
+<ion-view view-title="Categorias">
+  <ion-content>
+    <h1>Categorias</h1>
+	<ion-list>
+      <ion-item ng-repeat="categorias in playlists" href="#/app/playlists/{{categorias.id}}">
+        {{categorias.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
