@@ -3,25 +3,18 @@
     <ion-list>
       <ion-item >
         <div class="list card">
-          <ion-item ng-repeat="image in images" href="#/app/playlist/{{image.id}}">
+          <ion-item ng-repeat="image in imagenes">
           {{image.name}}
+           <hr>
+           <div class="item item-image">
+              <img src="http://www.planificaciondeportiva.es/{{image.uri}}">
+          </div>
           </ion-item>
-  <div class="item item-avatar">
-    <img src="avatar.jpg">
-    <h2>Pretty Hate Machine</h2>
-    <p>Nine Inch Nails</p>
-  </div>
+            </div>
 
-  <div class="item item-image">
-    <img src="cover.jpg">
-  </div>
+ 
+    
 
-  <a class="item item-icon-left assertive" href="#">
-    <i class="icon ion-music-note"></i>
-    Start listening
-  </a>
-
-</div>
       </ion-item>
     </ion-list>
   </ion-content>

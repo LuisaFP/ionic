@@ -79,11 +79,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.categories',
   })
 
     .state('app.img', {
-    url: "/item/:playlistId",
+    url: "/item/:imageId",
     views: {
       'menuContent': {
-        templateUrl: "templates/item.html"
-       // controller: 'ImagesListCtrl'
+        templateUrl: "templates/item.html",
+        controller: 'ImagesListCtrl'
       }
     }
   });

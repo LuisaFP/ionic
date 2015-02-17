@@ -64,24 +64,27 @@ angular.module('starter.controllers', [])
       };
       $scope.items = item_id;
       $scope.playlistId = $stateParams.playlistId;
-      
+      //console.log(item_id);
         });
 })
     
-.controller('ImagesListCtrl', function($location, $scope, Images) {
+.controller('ImagesListCtrl', function($location, $scope, $stateParams, Imagenes) {
   var img_id= [];
-        Images.query(function(data){
+        Imagenes.query(function(data){
        //$scope.images = data;
       for (var i = 0; i < data.length; i++) {
-     //   if(data[i].item_id == $stateParams.playlistId){
-     //     img_id.push(data[i]);*/
+       if(data[i].item_id == $stateParams.imageId){
+          img_id.push(data[i]);
         }
-  
-      });
-   //   $scope.images = img_id;
-   //  $scope.playlistId = $stateParams.playlistId;
-})
+      };
+   
+    $scope.imagenes = img_id;
+    //console.log(img_id);
 
+   // $scope.imageId = $stateParams.imageId;
+
+});
+})
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 });
