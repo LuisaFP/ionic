@@ -3,7 +3,9 @@
     <ion-list>
       <ion-item >
         <div class="list card">
-
+          <ion-item ng-repeat="image in images" href="#/app/playlist/{{image.id}}">
+          {{image.name}}
+          </ion-item>
   <div class="item item-avatar">
     <img src="avatar.jpg">
     <h2>Pretty Hate Machine</h2>
